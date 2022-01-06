@@ -1,1 +1,1 @@
-{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/quartz","top":"minecraft:block/quartz","side":"minecraft:block/quartz"}}
+{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/quartz_side","top":"minecraft:block/quartz_side","side":"minecraft:block/quartz_side"}}

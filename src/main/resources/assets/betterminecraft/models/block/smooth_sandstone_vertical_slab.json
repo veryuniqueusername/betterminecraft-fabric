@@ -1,1 +1,1 @@
-{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/smooth_sandstone","top":"minecraft:block/smooth_sandstone","side":"minecraft:block/smooth_sandstone"}}
+{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/sandstone_top","top":"minecraft:block/sandstone_top","side":"minecraft:block/sandstone_top"}}
