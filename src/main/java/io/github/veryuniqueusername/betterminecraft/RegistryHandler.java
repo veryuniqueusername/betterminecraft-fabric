@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -24,8 +23,8 @@ public class RegistryHandler {
 		return Registry.register(Registry.BLOCK, identify(name), block);
 	}
 
-	private static Item registerItem(Block block, ItemGroup group) {
-		return Registry.register(Registry.ITEM, Registry.BLOCK.getId(block), new BlockItem(block, new FabricItemSettings().group(group)));
+	private static void registerItem(Block block, ItemGroup group) {
+		Registry.register(Registry.ITEM, Registry.BLOCK.getId(block), new BlockItem(block, new FabricItemSettings().group(group)));
 	}
 
 	private static void registerPlanks(String color, FabricBlockSettings properties, MapColor mapColor) {
@@ -40,6 +39,10 @@ public class RegistryHandler {
 		}), ItemGroup.REDSTONE);
 		registerItem(registerBlock(color + "_plank_pressure_plate", new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD, mapColor).noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD)) {
 		}), ItemGroup.REDSTONE);
+	}
+
+	private static void registerVerticalSlab(Block parent, String baseName) {
+		registerItem(registerBlock(baseName + "_vertical_slab", new VerticalSlabBlock(FabricBlockSettings.copyOf(parent))), ItemGroup.BUILDING_BLOCKS);
 	}
 
 	private static final FabricBlockSettings WHITE = FabricBlockSettings.of(Material.WOOD, MapColor.WHITE).strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD);
@@ -86,5 +89,62 @@ public class RegistryHandler {
 		Registry.register(Registry.ITEM, identify("rope"), new RopeItem(ROPE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
 
 		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ROPE, LANTERN, SOUL_LANTERN);
+
+		registerVerticalSlab(Blocks.OAK_SLAB, "oak");
+		registerVerticalSlab(Blocks.SPRUCE_SLAB, "spruce");
+		registerVerticalSlab(Blocks.BIRCH_SLAB, "birch");
+		registerVerticalSlab(Blocks.JUNGLE_SLAB, "jungle");
+		registerVerticalSlab(Blocks.ACACIA_SLAB, "acacia");
+		registerVerticalSlab(Blocks.DARK_OAK_SLAB, "dark_oak");
+
+		registerVerticalSlab(Blocks.PRISMARINE_SLAB, "prismarine");
+		registerVerticalSlab(Blocks.PRISMARINE_BRICK_SLAB, "prismarine_brick");
+		registerVerticalSlab(Blocks.DARK_PRISMARINE_SLAB, "dark_prismarine");
+		registerVerticalSlab(Blocks.SMOOTH_STONE_SLAB, "smooth_stone");
+		registerVerticalSlab(Blocks.SANDSTONE_SLAB, "sandstone");
+		registerVerticalSlab(Blocks.CUT_SANDSTONE_SLAB, "cut_sandstone");
+		registerVerticalSlab(Blocks.PETRIFIED_OAK_SLAB, "petrified_oak");
+		registerVerticalSlab(Blocks.COBBLESTONE_SLAB, "cobblestone");
+		registerVerticalSlab(Blocks.BRICK_SLAB, "brick");
+		registerVerticalSlab(Blocks.STONE_BRICK_SLAB, "stone_brick");
+		registerVerticalSlab(Blocks.NETHER_BRICK_SLAB, "nether_brick");
+		registerVerticalSlab(Blocks.QUARTZ_SLAB, "quartz");
+		registerVerticalSlab(Blocks.RED_SANDSTONE_SLAB, "red_sandstone");
+		registerVerticalSlab(Blocks.CUT_RED_SANDSTONE_SLAB, "cut_red_sandstone");
+
+		registerVerticalSlab(Blocks.POLISHED_GRANITE_SLAB, "polished_granite");
+		registerVerticalSlab(Blocks.SMOOTH_RED_SANDSTONE_SLAB, "smooth_red_sandstone");
+		registerVerticalSlab(Blocks.MOSSY_STONE_BRICK_SLAB, "mossy_stone_brick");
+		registerVerticalSlab(Blocks.POLISHED_DIORITE_SLAB, "polished_diorite");
+		registerVerticalSlab(Blocks.MOSSY_COBBLESTONE_SLAB, "mossy_cobblestone");
+		registerVerticalSlab(Blocks.END_STONE_BRICK_SLAB, "end_stone_brick");
+		registerVerticalSlab(Blocks.SMOOTH_SANDSTONE_SLAB, "smooth_sandstone");
+		registerVerticalSlab(Blocks.SMOOTH_QUARTZ_SLAB, "smooth_quartz");
+		registerVerticalSlab(Blocks.GRANITE_SLAB, "granite");
+		registerVerticalSlab(Blocks.ANDESITE_SLAB, "andesite");
+		registerVerticalSlab(Blocks.RED_NETHER_BRICK_SLAB, "red_nether_brick");
+		registerVerticalSlab(Blocks.POLISHED_ANDESITE_SLAB, "polished_andesite");
+		registerVerticalSlab(Blocks.DIORITE_SLAB, "diorite");
+
+		registerVerticalSlab(Blocks.CRIMSON_SLAB, "crimson");
+		registerVerticalSlab(Blocks.WARPED_SLAB, "warped");
+
+		registerVerticalSlab(Blocks.BLACKSTONE_SLAB, "blackstone");
+		registerVerticalSlab(Blocks.POLISHED_BLACKSTONE_BRICK_SLAB, "polished_blackstone_brick");
+		registerVerticalSlab(Blocks.POLISHED_BLACKSTONE_SLAB, "polished_blackstone");
+
+		registerVerticalSlab(Blocks.OXIDIZED_CUT_COPPER_SLAB, "oxidized_cut_copper");
+		registerVerticalSlab(Blocks.WEATHERED_CUT_COPPER_SLAB, "weathered_cut_copper");
+		registerVerticalSlab(Blocks.EXPOSED_CUT_COPPER_SLAB, "exposed_cut_copper");
+		registerVerticalSlab(Blocks.CUT_COPPER_SLAB, "cut_copper");
+		registerVerticalSlab(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB, "waxed_oxidized_cut_copper");
+		registerVerticalSlab(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB, "waxed_weathered_cut_copper");
+		registerVerticalSlab(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB, "waxed_exposed_cut_copper");
+		registerVerticalSlab(Blocks.WAXED_CUT_COPPER_SLAB, "waxed_cut_copper");
+
+		registerVerticalSlab(Blocks.COBBLED_DEEPSLATE_SLAB, "cobbled_deepslate");
+		registerVerticalSlab(Blocks.POLISHED_DEEPSLATE_SLAB, "polished_deepslate");
+		registerVerticalSlab(Blocks.DEEPSLATE_TILE_SLAB, "deepslate_tile");
+		registerVerticalSlab(Blocks.DEEPSLATE_BRICK_SLAB, "deepslate_brick");
 	}
 }
