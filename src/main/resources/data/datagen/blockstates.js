@@ -1,6 +1,7 @@
 var fs = require('fs');
 
 let list = require('./list.json');
+let list_textures = require('./list_textures.json');
 
 let template = {
 	variants: {
@@ -24,11 +25,13 @@ let template = {
 			y: 270,
 			uvlock: true,
 		},
-		'type=double': { model: 'minecraft:block/str' },
+		'type=double': { model: 'minecraft:block/%tex' },
 	},
 };
 for (str in list) {
-	let json = JSON.stringify(template).replace(/str/g, list[str]);
+	let json = JSON.stringify(template)
+		.replace(/str/g, list[str])
+		.replace(/%tex/g, list_textures[str]);
 	console.log(json);
 	fs.writeFile(
 		`./blockstates/${list[str]}_vertical_slab.json`,

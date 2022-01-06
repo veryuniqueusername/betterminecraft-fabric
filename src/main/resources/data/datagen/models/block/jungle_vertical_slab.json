@@ -1,1 +1,1 @@
-{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/jungle","top":"minecraft:block/jungle","side":"minecraft:block/jungle"}}
+{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/jungle_planks","top":"minecraft:block/jungle_planks","side":"minecraft:block/jungle_planks"}}

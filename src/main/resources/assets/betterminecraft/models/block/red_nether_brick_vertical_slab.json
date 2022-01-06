@@ -1,1 +1,1 @@
-{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/red_nether_brick","top":"minecraft:block/red_nether_brick","side":"minecraft:block/red_nether_brick"}}
+{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/red_nether_bricks","top":"minecraft:block/red_nether_bricks","side":"minecraft:block/red_nether_bricks"}}

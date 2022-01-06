@@ -1,1 +1,1 @@
-{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/warped","top":"minecraft:block/warped","side":"minecraft:block/warped"}}
+{"parent":"betterminecraft:block/vertical_slab","textures":{"bottom":"minecraft:block/warped_planks","top":"minecraft:block/warped_planks","side":"minecraft:block/warped_planks"}}

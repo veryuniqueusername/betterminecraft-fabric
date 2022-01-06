@@ -100,6 +100,8 @@ public class RegistryHandler {
 		registerVerticalSlab(Blocks.PRISMARINE_SLAB, "prismarine");
 		registerVerticalSlab(Blocks.PRISMARINE_BRICK_SLAB, "prismarine_brick");
 		registerVerticalSlab(Blocks.DARK_PRISMARINE_SLAB, "dark_prismarine");
+
+		registerVerticalSlab(Blocks.STONE_SLAB, "stone");
 		registerVerticalSlab(Blocks.SMOOTH_STONE_SLAB, "smooth_stone");
 		registerVerticalSlab(Blocks.SANDSTONE_SLAB, "sandstone");
 		registerVerticalSlab(Blocks.CUT_SANDSTONE_SLAB, "cut_sandstone");
