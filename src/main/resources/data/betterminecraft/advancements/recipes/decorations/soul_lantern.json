@@ -1,0 +1,25 @@
+{
+	"parent": "minecraft:recipes/root",
+	"rewards": {
+		"recipes": ["betterminecraft:soul_lantern"]
+	},
+	"criteria": {
+		"has_soul_torch": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:soul_torch"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "betterminecraft:soul_lantern"
+			}
+		}
+	},
+	"requirements": [["has_soul_torch", "has_the_recipe"]]
+}

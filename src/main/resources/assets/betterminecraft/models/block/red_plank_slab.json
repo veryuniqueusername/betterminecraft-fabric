@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/slab",
+	"textures": {
+		"bottom": "betterminecraft:block/red_planks",
+		"top": "betterminecraft:block/red_planks",
+		"side": "betterminecraft:block/red_planks"
+	}
+}

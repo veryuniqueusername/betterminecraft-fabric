@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"betterminecraft:black_plank_button",
+		"betterminecraft:blue_plank_button",
+		"betterminecraft:brown_plank_button",
+		"betterminecraft:cyan_plank_button",
+		"betterminecraft:gray_plank_button",
+		"betterminecraft:green_plank_button",
+		"betterminecraft:light_blue_plank_button",
+		"betterminecraft:light_gray_plank_button",
+		"betterminecraft:lime_plank_button",
+		"betterminecraft:magenta_plank_button",
+		"betterminecraft:orange_plank_button",
+		"betterminecraft:pink_plank_button",
+		"betterminecraft:purple_plank_button",
+		"betterminecraft:red_plank_button",
+		"betterminecraft:white_plank_button",
+		"betterminecraft:yellow_plank_button"
+	]
+}

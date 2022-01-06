@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=down": { "model": "betterminecraft:block/soul_lantern_hanging" },
+		"facing=up": { "model": "betterminecraft:block/soul_lantern" },
+		"facing=north": {
+			"model": "betterminecraft:block/soul_lantern_wall",
+			"y": 180
+		},
+		"facing=south": { "model": "betterminecraft:block/soul_lantern_wall" },
+		"facing=west": {
+			"model": "betterminecraft:block/soul_lantern_wall",
+			"y": 90
+		},
+		"facing=east": {
+			"model": "betterminecraft:block/soul_lantern_wall",
+			"y": 270
+		}
+	}
+}

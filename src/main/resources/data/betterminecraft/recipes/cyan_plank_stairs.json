@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "wooden_stairs",
+	"pattern": ["#  ", "## ", "###"],
+	"key": {
+		"#": {
+			"item": "betterminecraft:cyan_planks"
+		}
+	},
+	"result": {
+		"item": "betterminecraft:cyan_plank_stairs",
+		"count": 4
+	}
+}

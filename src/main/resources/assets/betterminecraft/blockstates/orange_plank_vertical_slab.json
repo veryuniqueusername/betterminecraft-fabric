@@ -1,0 +1,25 @@
+{
+	"variants": {
+		"type=north": {
+			"model": "betterminecraft:block/orange_plank_vertical_slab",
+			"y": 0,
+			"uvlock": true
+		},
+		"type=south": {
+			"model": "betterminecraft:block/orange_plank_vertical_slab",
+			"y": 180,
+			"uvlock": true
+		},
+		"type=east": {
+			"model": "betterminecraft:block/orange_plank_vertical_slab",
+			"y": 90,
+			"uvlock": true
+		},
+		"type=west": {
+			"model": "betterminecraft:block/orange_plank_vertical_slab",
+			"y": 270,
+			"uvlock": true
+		},
+		"type=double": { "model": "betterminecraft:block/orange_planks" }
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"powered=false": {
+			"model": "betterminecraft:block/lime_plank_pressure_plate"
+		},
+		"powered=true": {
+			"model": "betterminecraft:block/lime_plank_pressure_plate_down"
+		}
+	}
+}

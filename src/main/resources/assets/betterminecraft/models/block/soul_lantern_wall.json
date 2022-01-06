@@ -1,0 +1,6 @@
+{
+	"parent": "betterminecraft:block/template_wall_lantern",
+	"textures": {
+		"lantern": "betterminecraft:block/soul_lantern"
+	}
+}

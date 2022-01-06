@@ -1,0 +1,8 @@
+{
+	"parent": "betterminecraft:block/vertical_slab",
+	"textures": {
+		"bottom": "betterminecraft:block/blue_planks",
+		"top": "betterminecraft:block/blue_planks",
+		"side": "betterminecraft:block/blue_planks"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "betterminecraft:block/yellow_plank_slab"
+		},
+		"type=double": {
+			"model": "betterminecraft:block/yellow_planks"
+		},
+		"type=top": {
+			"model": "betterminecraft:block/yellow_plank_slab_top"
+		}
+	}
+}

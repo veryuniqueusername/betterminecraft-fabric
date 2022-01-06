@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"betterminecraft:black_plank_pressure_plate",
+		"betterminecraft:blue_plank_pressure_plate",
+		"betterminecraft:brown_plank_pressure_plate",
+		"betterminecraft:cyan_plank_pressure_plate",
+		"betterminecraft:gray_plank_pressure_plate",
+		"betterminecraft:green_plank_pressure_plate",
+		"betterminecraft:light_blue_plank_pressure_plate",
+		"betterminecraft:light_gray_plank_pressure_plate",
+		"betterminecraft:lime_plank_pressure_plate",
+		"betterminecraft:magenta_plank_pressure_plate",
+		"betterminecraft:orange_plank_pressure_plate",
+		"betterminecraft:pink_plank_pressure_plate",
+		"betterminecraft:purple_plank_pressure_plate",
+		"betterminecraft:red_plank_pressure_plate",
+		"betterminecraft:white_plank_pressure_plate",
+		"betterminecraft:yellow_plank_pressure_plate"
+	]
+}

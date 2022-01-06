@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "wooden_button",
+	"ingredients": [
+		{
+			"item": "betterminecraft:lime_planks"
+		}
+	],
+	"result": {
+		"item": "betterminecraft:lime_plank_button"
+	}
+}

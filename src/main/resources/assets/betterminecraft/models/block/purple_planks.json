@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "betterminecraft:block/purple_planks"
+	}
+}

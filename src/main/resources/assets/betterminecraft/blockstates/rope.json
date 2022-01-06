@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"type=top": {
+			"model": "betterminecraft:block/rope_top"
+		},
+		"type=middle": {
+			"model": "betterminecraft:block/rope"
+		},
+		"type=bottom": {
+			"model": "betterminecraft:block/rope_bottom"
+		},
+		"type=both": {
+			"model": "betterminecraft:block/rope_both"
+		}
+	}
+}

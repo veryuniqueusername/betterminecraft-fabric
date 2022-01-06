@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "betterminecraft:block/lime_plank_slab"
+		},
+		"type=double": {
+			"model": "betterminecraft:block/lime_planks"
+		},
+		"type=top": {
+			"model": "betterminecraft:block/lime_plank_slab_top"
+		}
+	}
+}

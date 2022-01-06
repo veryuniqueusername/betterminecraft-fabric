@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "wooden_pressure_plate",
+	"pattern": ["##"],
+	"key": {
+		"#": {
+			"item": "betterminecraft:magenta_planks"
+		}
+	},
+	"result": {
+		"item": "betterminecraft:magenta_plank_pressure_plate"
+	}
+}

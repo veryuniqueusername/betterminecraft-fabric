@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "wooden_stairs",
+	"pattern": ["#  ", "## ", "###"],
+	"key": {
+		"#": {
+			"item": "betterminecraft:light_blue_planks"
+		}
+	},
+	"result": {
+		"item": "betterminecraft:light_blue_plank_stairs",
+		"count": 4
+	}
+}

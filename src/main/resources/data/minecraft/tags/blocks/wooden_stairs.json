@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"betterminecraft:black_plank_stairs",
+		"betterminecraft:blue_plank_stairs",
+		"betterminecraft:brown_plank_stairs",
+		"betterminecraft:cyan_plank_stairs",
+		"betterminecraft:gray_plank_stairs",
+		"betterminecraft:green_plank_stairs",
+		"betterminecraft:light_blue_plank_stairs",
+		"betterminecraft:light_gray_plank_stairs",
+		"betterminecraft:lime_plank_stairs",
+		"betterminecraft:magenta_plank_stairs",
+		"betterminecraft:orange_plank_stairs",
+		"betterminecraft:pink_plank_stairs",
+		"betterminecraft:purple_plank_stairs",
+		"betterminecraft:red_plank_stairs",
+		"betterminecraft:white_plank_stairs",
+		"betterminecraft:yellow_plank_stairs"
+	]
+}

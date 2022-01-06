@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "betterminecraft:black_plank_vertical_slab"
+		}
+	],
+	"result": {
+		"item": "betterminecraft:black_plank_slab",
+		"count": 1
+	}
+}

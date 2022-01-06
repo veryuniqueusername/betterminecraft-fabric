@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"facing=down": { "model": "betterminecraft:block/lantern_hanging" },
+		"facing=up": { "model": "betterminecraft:block/lantern" },
+		"facing=north": { "model": "betterminecraft:block/lantern_wall", "y": 180 },
+		"facing=south": { "model": "betterminecraft:block/lantern_wall" },
+		"facing=west": { "model": "betterminecraft:block/lantern_wall", "y": 90 },
+		"facing=east": { "model": "betterminecraft:block/lantern_wall", "y": 270 }
+	}
+}

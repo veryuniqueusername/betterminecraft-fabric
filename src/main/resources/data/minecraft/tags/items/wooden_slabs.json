@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"betterminecraft:black_plank_slab",
+		"betterminecraft:blue_plank_slab",
+		"betterminecraft:brown_plank_slab",
+		"betterminecraft:cyan_plank_slab",
+		"betterminecraft:gray_plank_slab",
+		"betterminecraft:green_plank_slab",
+		"betterminecraft:light_blue_plank_slab",
+		"betterminecraft:light_gray_plank_slab",
+		"betterminecraft:lime_plank_slab",
+		"betterminecraft:magenta_plank_slab",
+		"betterminecraft:orange_plank_slab",
+		"betterminecraft:pink_plank_slab",
+		"betterminecraft:purple_plank_slab",
+		"betterminecraft:red_plank_slab",
+		"betterminecraft:white_plank_slab",
+		"betterminecraft:yellow_plank_slab"
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "betterminecraft:block/template_lantern",
+	"textures": {
+		"lantern": "betterminecraft:block/lantern"
+	}
+}

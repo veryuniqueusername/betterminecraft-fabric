@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/outer_stairs",
+	"textures": {
+		"bottom": "betterminecraft:block/lime_planks",
+		"top": "betterminecraft:block/lime_planks",
+		"side": "betterminecraft:block/lime_planks"
+	}
+}

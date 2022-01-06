@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/button",
+	"textures": {
+		"texture": "betterminecraft:block/white_planks"
+	}
+}

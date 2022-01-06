@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"betterminecraft:black_plank_fence",
+		"betterminecraft:blue_plank_fence",
+		"betterminecraft:brown_plank_fence",
+		"betterminecraft:cyan_plank_fence",
+		"betterminecraft:gray_plank_fence",
+		"betterminecraft:green_plank_fence",
+		"betterminecraft:light_blue_plank_fence",
+		"betterminecraft:light_gray_plank_fence",
+		"betterminecraft:lime_plank_fence",
+		"betterminecraft:magenta_plank_fence",
+		"betterminecraft:orange_plank_fence",
+		"betterminecraft:pink_plank_fence",
+		"betterminecraft:purple_plank_fence",
+		"betterminecraft:red_plank_fence",
+		"betterminecraft:white_plank_fence",
+		"betterminecraft:yellow_plank_fence"
+	]
+}

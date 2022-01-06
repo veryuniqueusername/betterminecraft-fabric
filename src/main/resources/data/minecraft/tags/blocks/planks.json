@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"betterminecraft:black_planks",
+		"betterminecraft:blue_planks",
+		"betterminecraft:brown_planks",
+		"betterminecraft:cyan_planks",
+		"betterminecraft:gray_planks",
+		"betterminecraft:green_planks",
+		"betterminecraft:light_blue_planks",
+		"betterminecraft:light_gray_planks",
+		"betterminecraft:lime_planks",
+		"betterminecraft:magenta_planks",
+		"betterminecraft:orange_planks",
+		"betterminecraft:pink_planks",
+		"betterminecraft:purple_planks",
+		"betterminecraft:red_planks",
+		"betterminecraft:white_planks",
+		"betterminecraft:yellow_planks"
+	]
+}
