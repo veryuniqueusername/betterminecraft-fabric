@@ -1,4 +1,8 @@
 {
 	"replace": false,
-	"values": ["betterminecraft:lantern", "betterminecraft:soul_lantern"]
+	"values": [
+		"betterminecraft:lantern",
+		"betterminecraft:soul_lantern",
+		"#betterminecraft:stone_vertical_slabs"
+	]
 }

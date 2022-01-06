@@ -1,0 +1,29 @@
+{
+	"replace": false,
+	"values": [
+		"betterminecraft:black_plank_vertical_slab",
+		"betterminecraft:blue_plank_vertical_slab",
+		"betterminecraft:brown_plank_vertical_slab",
+		"betterminecraft:cyan_plank_vertical_slab",
+		"betterminecraft:gray_plank_vertical_slab",
+		"betterminecraft:green_plank_vertical_slab",
+		"betterminecraft:light_blue_plank_vertical_slab",
+		"betterminecraft:light_gray_plank_vertical_slab",
+		"betterminecraft:lime_plank_vertical_slab",
+		"betterminecraft:magenta_plank_vertical_slab",
+		"betterminecraft:orange_plank_vertical_slab",
+		"betterminecraft:pink_plank_vertical_slab",
+		"betterminecraft:purple_plank_vertical_slab",
+		"betterminecraft:red_plank_vertical_slab",
+		"betterminecraft:white_plank_vertical_slab",
+		"betterminecraft:yellow_plank_vertical_slab",
+		"betterminecraft:oak_vertical_slab",
+		"betterminecraft:spruce_vertical_slab",
+		"betterminecraft:birch_vertical_slab",
+		"betterminecraft:jungle_vertical_slab",
+		"betterminecraft:acacia_vertical_slab",
+		"betterminecraft:dark_oak_vertical_slab",
+		"betterminecraft:crimson_vertical_slab",
+		"betterminecraft:warped_vertical_slab"
+	]
+}
