@@ -1,4 +1,4 @@
-package io.github.veryuniqueusername.betterminecraft;
+package io.github.veryuniqueusername.betterminecraft.types;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.StringIdentifiable;

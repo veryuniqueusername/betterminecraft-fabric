@@ -1,5 +1,6 @@
-package io.github.veryuniqueusername.betterminecraft;
+package io.github.veryuniqueusername.betterminecraft.blocks;
 
+import io.github.veryuniqueusername.betterminecraft.types.RopeType;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

@@ -1,5 +1,9 @@
 package io.github.veryuniqueusername.betterminecraft;
 
+import io.github.veryuniqueusername.betterminecraft.blocks.LanternBlock;
+import io.github.veryuniqueusername.betterminecraft.blocks.RopeBlock;
+import io.github.veryuniqueusername.betterminecraft.blocks.RopeItem;
+import io.github.veryuniqueusername.betterminecraft.blocks.VerticalSlabBlock;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -80,7 +84,7 @@ public class RegistryHandler {
 		registerPlanks("red", RED, MapColor.RED);
 		registerPlanks("black", BLACK, MapColor.BLACK);
 
-		final Block LANTERN = registerBlock("lantern", new LanternBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance(15).nonOpaque()));
+		final Block LANTERN = registerBlock("lantern", new io.github.veryuniqueusername.betterminecraft.blocks.LanternBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance(15).nonOpaque()));
 		registerItem(LANTERN, ItemGroup.DECORATIONS);
 		final Block SOUL_LANTERN = registerBlock("soul_lantern", new LanternBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance(15).nonOpaque()));
 		registerItem(SOUL_LANTERN, ItemGroup.DECORATIONS);
