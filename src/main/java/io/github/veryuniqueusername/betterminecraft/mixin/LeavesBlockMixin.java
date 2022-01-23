@@ -1,4 +1,4 @@
-package io.github.veryuniqueusername.betterminecraft.blocks;
+package io.github.veryuniqueusername.betterminecraft.mixin;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -8,8 +8,6 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.state.property.IntProperty;
-import net.minecraft.state.property.Properties;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -18,21 +16,24 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
+import org.spongepowered.asm.mixin.Mixin;
 
 import java.util.Random;
 
-public class BetterLeavesBlock extends Block {
-	public static final IntProperty DISTANCE = Properties.DISTANCE_1_7;
-	public static final BooleanProperty PERSISTENT = Properties.PERSISTENT;
-	public static final BooleanProperty EXPOSED = BooleanProperty.of("exposed");
+import static net.minecraft.block.LeavesBlock.DISTANCE;
+import static net.minecraft.block.LeavesBlock.PERSISTENT;
 
-	public BetterLeavesBlock(Settings properties) {
+@Mixin(LeavesBlock.class)
+public class LeavesBlockMixin extends Block {
+	private static final BooleanProperty EXPOSED = BooleanProperty.of("exposed");
+
+	public LeavesBlockMixin(Settings properties) {
 		super(properties);
-		this.setDefaultState(this.getDefaultState().with(DISTANCE, 7).with(PERSISTENT, Boolean.FALSE).with(EXPOSED, Boolean.TRUE));
+		this.setDefaultState(this.stateManager.getDefaultState().with(DISTANCE, 7).with(PERSISTENT, false).with(EXPOSED, true));
 	}
 
 	@Override
-	protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+	public void appendProperties(StateManager.Builder<Block, BlockState> builder) {
 		builder.add(DISTANCE, PERSISTENT, EXPOSED);
 	}
 
@@ -125,6 +126,6 @@ public class BetterLeavesBlock extends Block {
 
 	@Override
 	public BlockState getPlacementState(ItemPlacementContext ctx) {
-		return updateDistanceFromLogs( this.getDefaultState().with(PERSISTENT, true), ctx.getWorld(), ctx.getBlockPos());
+		return updateDistanceFromLogs(this.getDefaultState().with(PERSISTENT, true), ctx.getWorld(), ctx.getBlockPos());
 	}
 }
