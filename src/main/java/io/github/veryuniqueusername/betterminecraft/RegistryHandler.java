@@ -1,9 +1,7 @@
 package io.github.veryuniqueusername.betterminecraft;
 
 import io.github.veryuniqueusername.betterminecraft.blocks.LanternBlock;
-import io.github.veryuniqueusername.betterminecraft.blocks.RopeBlock;
-import io.github.veryuniqueusername.betterminecraft.blocks.RopeItem;
-import io.github.veryuniqueusername.betterminecraft.blocks.VerticalSlabBlock;
+import io.github.veryuniqueusername.betterminecraft.blocks.*;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -84,7 +82,7 @@ public class RegistryHandler {
 		registerPlanks("red", RED, MapColor.RED);
 		registerPlanks("black", BLACK, MapColor.BLACK);
 
-		final Block LANTERN = registerBlock("lantern", new io.github.veryuniqueusername.betterminecraft.blocks.LanternBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance(15).nonOpaque()));
+		final Block LANTERN = registerBlock("lantern", new LanternBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance(15).nonOpaque()));
 		registerItem(LANTERN, ItemGroup.DECORATIONS);
 		final Block SOUL_LANTERN = registerBlock("soul_lantern", new LanternBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance(15).nonOpaque()));
 		registerItem(SOUL_LANTERN, ItemGroup.DECORATIONS);
@@ -92,7 +90,22 @@ public class RegistryHandler {
 		final Block ROPE = registerBlock("rope", new RopeBlock(FabricBlockSettings.of(Material.WOOL).strength(1.0F, 0.5F).sounds(BlockSoundGroup.WOOL).nonOpaque()));
 		Registry.register(Registry.ITEM, identify("rope"), new RopeItem(ROPE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
 
-		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ROPE, LANTERN, SOUL_LANTERN);
+		final Block OAK_LEAVES = registerBlock("oak_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+		registerItem(OAK_LEAVES, ItemGroup.DECORATIONS);
+		final Block SPRUCE_LEAVES = registerBlock("spruce_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_LEAVES)));
+		registerItem(SPRUCE_LEAVES, ItemGroup.DECORATIONS);
+		final Block BIRCH_LEAVES = registerBlock("birch_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_LEAVES)));
+		registerItem(BIRCH_LEAVES, ItemGroup.DECORATIONS);
+		final Block JUNGLE_LEAVES = registerBlock("jungle_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES)));
+		registerItem(JUNGLE_LEAVES, ItemGroup.DECORATIONS);
+		final Block ACACIA_LEAVES = registerBlock("acacia_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.ACACIA_LEAVES)));
+		registerItem(ACACIA_LEAVES, ItemGroup.DECORATIONS);
+		final Block DARK_OAK_LEAVES = registerBlock("dark_oak_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES)));
+		registerItem(DARK_OAK_LEAVES, ItemGroup.DECORATIONS);
+		final Block AZALEA_LEAVES = registerBlock("azalea_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES)));
+		registerItem(AZALEA_LEAVES, ItemGroup.DECORATIONS);
+
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ROPE, LANTERN, SOUL_LANTERN, OAK_LEAVES, SPRUCE_LEAVES, BIRCH_LEAVES, JUNGLE_LEAVES, ACACIA_LEAVES, DARK_OAK_LEAVES, AZALEA_LEAVES);
 
 		registerVerticalSlab(Blocks.OAK_SLAB, "oak");
 		registerVerticalSlab(Blocks.SPRUCE_SLAB, "spruce");
