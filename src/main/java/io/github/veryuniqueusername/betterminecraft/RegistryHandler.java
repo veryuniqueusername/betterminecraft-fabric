@@ -2,6 +2,7 @@ package io.github.veryuniqueusername.betterminecraft;
 
 import io.github.veryuniqueusername.betterminecraft.blocks.LanternBlock;
 import io.github.veryuniqueusername.betterminecraft.blocks.*;
+import io.github.veryuniqueusername.betterminecraft.blocks.BetterLeavesBlock;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -90,7 +91,10 @@ public class RegistryHandler {
 		final Block ROPE = registerBlock("rope", new RopeBlock(FabricBlockSettings.of(Material.WOOL).strength(1.0F, 0.5F).sounds(BlockSoundGroup.WOOL).nonOpaque()));
 		Registry.register(Registry.ITEM, identify("rope"), new RopeItem(ROPE, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
 
-		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ROPE, LANTERN, SOUL_LANTERN);
+		final Block OAK_LEAVES = registerBlock("oak_leaves", new BetterLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).dropsLike(Blocks.OAK_LEAVES)));
+		Registry.register(Registry.ITEM, identify("oak_leaves"), new BlockItem(OAK_LEAVES, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ROPE, LANTERN, SOUL_LANTERN, OAK_LEAVES);
 
 		registerVerticalSlab(Blocks.OAK_SLAB, "oak");
 		registerVerticalSlab(Blocks.SPRUCE_SLAB, "spruce");

@@ -4,10 +4,8 @@
   "package": "io.github.veryuniqueusername.betterminecraft.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "LeavesBlockMixin"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
