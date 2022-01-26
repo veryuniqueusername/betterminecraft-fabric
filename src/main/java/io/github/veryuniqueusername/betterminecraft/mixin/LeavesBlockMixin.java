@@ -66,7 +66,7 @@ public class LeavesBlockMixin extends Block {
 		BlockPos.Mutable mutable = new BlockPos.Mutable();
 		for (Direction direction: Direction.values()) {
 			mutable.set(pos, direction);
-			if (!(world.getBlockState(mutable).isIn(BlockTags.LEAVES)))
+			if (!(world.getBlockState(mutable).getBlock() instanceof LeavesBlock))
 				return state.with(EXPOSED, true);
 		}
 		return state.with(EXPOSED, false);
